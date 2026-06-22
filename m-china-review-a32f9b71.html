@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jiuyou · 杂志专题</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Noto Serif SC", "Source Han Serif SC", "Georgia", "Times New Roman", serif;
+            background-color: #f7f4ef;
+            color: #2c2b28;
+            line-height: 1.7;
+        }
+
+        .hero {
+            background: linear-gradient(145deg, #1d1b18 0%, #2f2b27 80%);
+            padding: 6rem 2rem 4.5rem;
+            text-align: center;
+            color: #e1dbd2;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: #b59975;
+        }
+
+        .hero h1 {
+            font-size: 3.2rem;
+            font-weight: 500;
+            letter-spacing: 0.08em;
+            text-transform: lowercase;
+            color: #efe8dd;
+            margin-bottom: 1rem;
+        }
+
+        .hero .sub {
+            font-size: 1.15rem;
+            font-weight: 300;
+            letter-spacing: 0.3em;
+            color: #baa992;
+            border-top: 1px solid #4d443b;
+            display: inline-block;
+            padding-top: 0.9rem;
+            margin-top: 0.2rem;
+        }
+
+        .hero .tagline {
+            margin-top: 2rem;
+            font-size: 1rem;
+            color: #b6a78e;
+            max-width: 580px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 3.5rem 2rem 5rem;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 2.8rem 2.8rem 3rem;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.02), 0 2px 4px rgba(0,0,0,0.02);
+            transition: box-shadow 0.2s;
+        }
+
+        .card:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .card h2 {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #2f2a24;
+            border-left: 3px solid #b59975;
+            padding-left: 1.2rem;
+            margin-bottom: 1.6rem;
+            letter-spacing: 0.02em;
+        }
+
+        .card p {
+            margin-bottom: 1.2rem;
+            font-size: 1rem;
+            color: #3e3a34;
+        }
+
+        .card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .highlight-link {
+            color: #a5825c;
+            text-decoration: none;
+            border-bottom: 1px solid #dacbbc;
+            transition: color 0.2s, border-color 0.2s;
+            font-weight: 500;
+        }
+
+        .highlight-link:hover {
+            color: #7f6546;
+            border-bottom-color: #7f6546;
+        }
+
+        .feature-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.2rem;
+            margin: 1.8rem 0 0.5rem;
+        }
+
+        .feature-item {
+            flex: 1 1 160px;
+            background: #f6f2ec;
+            padding: 1.2rem 1rem;
+            border-radius: 12px;
+            text-align: center;
+            color: #3a342d;
+        }
+
+        .feature-item .num {
+            display: block;
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: #a5825c;
+            line-height: 1.2;
+            margin-bottom: 0.2rem;
+        }
+
+        .feature-item .desc {
+            font-size: 0.9rem;
+            letter-spacing: 0.02em;
+        }
+
+        .faq-mini {
+            background: #f3efe9;
+            padding: 1.6rem 2rem;
+            border-radius: 18px;
+            margin-top: 1.8rem;
+        }
+
+        .faq-mini h3 {
+            font-size: 1.05rem;
+            font-weight: 500;
+            color: #3d352d;
+            margin-bottom: 0.8rem;
+            letter-spacing: 0.02em;
+        }
+
+        .faq-mini p {
+            font-size: 0.95rem;
+            color: #4e453d;
+            margin-bottom: 0.5rem;
+        }
+
+        .faq-mini p:last-child {
+            margin-bottom: 0;
+        }
+
+        .footer-note {
+            text-align: center;
+            margin-top: 3.5rem;
+            padding-top: 2rem;
+            border-top: 1px solid #e2d7cc;
+            font-size: 0.95rem;
+            color: #6b6055;
+        }
+
+        .footer-note a {
+            color: #a5825c;
+            text-decoration: none;
+            border-bottom: 1px solid #cebba6;
+            transition: color 0.2s;
+        }
+
+        .footer-note a:hover {
+            color: #7f6546;
+        }
+
+        @media (max-width: 600px) {
+            .hero {
+                padding: 4rem 1.5rem 3rem;
+            }
+            .hero h1 {
+                font-size: 2.4rem;
+            }
+            .hero .sub {
+                font-size: 0.95rem;
+            }
+            .container {
+                padding: 2rem 1.2rem 3.5rem;
+            }
+            .card {
+                padding: 2rem 1.5rem;
+            }
+            .card h2 {
+                font-size: 1.3rem;
+                padding-left: 1rem;
+            }
+            .feature-grid {
+                flex-direction: column;
+                gap: 0.8rem;
+            }
+            .feature-item {
+                flex: 1 1 auto;
+            }
+            .faq-mini {
+                padding: 1.2rem 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>jiuyou</h1>
+        <div class="sub">一份安静的信息源</div>
+        <div class="tagline">
+            从零散到有序，从模糊到具体——<br>
+            一个记录、整理与可信连接的站点。
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <h2>站点由来与底色</h2>
+            <p>
+                许多时候，我们需要的不是一个铺天盖地的平台，而是一个可以安静翻阅、反复回看的角落。<strong>jiuyou</strong> 便是在这样的想法下逐渐成形。
+        它没有冗余的推送，也没有浮夸的承诺，只是将那些经过核验、值得留存的片段，以相对朴素的方式陈列出来。
+            </p>
+            <p>
+                站内的内容大多围绕技术笔记、工具评测与日常梳理展开。每一篇都经过撰写者自己的理解与验证，不追逐时效，更在意准确与可用。如果你也在寻找一份不那么喧嚣的参考，不妨来 <a href="https://m-china-jiuyou.com" class="highlight-link">jiuyou</a> 随意走走。
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>内容的质地与筛选</h2>
+            <p>
+                这里没有算法推送，也没有流量导向。每一条记录都基于两个朴素的标准：来源可靠，且对实际场景有帮助。从软件配置到技巧复盘，从资源索引到思路整理，大部分内容都带有操作痕迹与个人校验，你可以把它看作一本开放的笔记本。
+            </p>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <span class="num">·</span>
+                    <span class="desc">经过实操验证</span>
+                </div>
+                <div class="feature-item">
+                    <span class="num">·</span>
+                    <span class="desc">持续补充修订</span>
+                </div>
+                <div class="feature-item">
+                    <span class="num">·</span>
+                    <span class="desc">保留引用出处</span>
+                </div>
+            </div>
+            <p style="margin-top: 1.2rem;">
+                无论是尝试新的命令行工具，还是回顾某个协议的细节，站点都尽量留下清晰的上下文。这种写法或许不够“轻快”，但胜在经得起细读。
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>安静的连接方式</h2>
+            <p>
+                网页本身没有设置评论区或社交分享按钮——这种克制是刻意的。信息在传递过程中容易变形，而站点的初衷是提供一个相对稳定的参照点，而不是一个讨论广场。如果你觉得某个条目有用，可以保留链接，或者直接用自己的方式复用。
+            </p>
+            <p>
+                另外，站点也提供一份简要的常见问题归纳，方便新访客快速了解边界：
+            </p>
+            <div class="faq-mini">
+                <h3>FAQ 摘要</h3>
+                <p><strong>内容更新频率？</strong> 不固定，有值得记录的线索就会整理发布，平均每月 2–5 篇。</p>
+                <p><strong>是否接受投稿或合作？</strong> 目前仅为个人站点，暂不开放外部投稿，但欢迎通过站内邮件链接交流线索。</p>
+                <p><strong>内容可以被转载吗？</strong> 可以，但请注明出处并保留原文链接，不要断章取义或用于商业误导。</p>
+            </div>
+            <p style="margin-top: 1.5rem;">
+                如果你想了解更多，可以直接浏览 <a href="https://m-china-jiuyou.com" class="highlight-link">jiuyou</a> 的主页。所有文字都安静地等在那里。
+            </p>
+        </div>
+
+        <div class="footer-note">
+            <p>你正在阅读的是一份关于 <a href="https://m-china-jiuyou.com">jiuyou</a> 的专题介绍页。</p>
+            <p style="margin-top: 0.6rem; font-size: 0.85rem; color: #94897d;">内容保持真实与克制 · 欢迎访问原始站点</p>
+        </div>
+    </div>
+</body>
+</html>
