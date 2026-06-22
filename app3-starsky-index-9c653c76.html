@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星空体育 – 稳定入口与页面说明</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: #f4f5f7;
+            color: #2d3436;
+            line-height: 1.7;
+            padding: 2rem 1.5rem;
+            max-width: 880px;
+            margin: 0 auto;
+        }
+
+        .hero {
+            background: #ffffff;
+            border-radius: 24px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+            padding: 2.8rem 2rem;
+            margin-bottom: 2.2rem;
+            border: 1px solid #e9ebee;
+        }
+
+        .hero h1 {
+            font-size: 2.1rem;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            color: #1e272e;
+            margin-bottom: 0.8rem;
+        }
+
+        .hero .punch {
+            font-size: 1.2rem;
+            color: #636e72;
+            border-left: 4px solid #b2bec3;
+            padding-left: 1.2rem;
+            margin: 1.2rem 0;
+            font-weight: 380;
+        }
+
+        .section-card {
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+            padding: 2rem 2rem;
+            margin-bottom: 1.8rem;
+            border: 1px solid #e2e5e9;
+            transition: box-shadow 0.2s;
+        }
+
+        .section-card:hover {
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+        }
+
+        .section-card h2 {
+            font-size: 1.4rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+            color: #2d3436;
+            letter-spacing: -0.01em;
+        }
+
+        .section-card p {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            color: #3d4144;
+        }
+
+        .feature-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.2rem;
+            margin: 1.2rem 0;
+        }
+
+        .feature-item {
+            flex: 1 1 180px;
+            background: #f8f9fb;
+            padding: 1.2rem 1rem;
+            border-radius: 16px;
+            border: 1px solid #e6e9ed;
+            font-weight: 400;
+            color: #1e272e;
+        }
+
+        .feature-item span {
+            display: block;
+            font-size: 0.9rem;
+            color: #636e72;
+            margin-top: 0.4rem;
+            font-weight: 350;
+        }
+
+        .highlight-link {
+            color: #2d3436;
+            text-decoration: none;
+            border-bottom: 2px solid #b2bec3;
+            padding-bottom: 2px;
+            font-weight: 450;
+            transition: border-color 0.15s;
+        }
+
+        .highlight-link:hover {
+            border-bottom-color: #636e72;
+        }
+
+        .note-box {
+            background: #f0f2f5;
+            border-radius: 16px;
+            padding: 1.4rem 1.8rem;
+            margin: 1.8rem 0;
+            border-left: 4px solid #b2bec3;
+            font-size: 0.95rem;
+            color: #3d4144;
+        }
+
+        .faq-summary {
+            margin-top: 1rem;
+        }
+
+        .faq-summary dt {
+            font-weight: 500;
+            margin-top: 1rem;
+            color: #1e272e;
+        }
+
+        .faq-summary dd {
+            margin: 0.3rem 0 1rem 1rem;
+            color: #555b5e;
+            font-size: 0.95rem;
+        }
+
+        .gentle-footer {
+            text-align: center;
+            padding: 1.5rem 0 0.5rem;
+            color: #9ba2a6;
+            font-size: 0.9rem;
+            border-top: 1px solid #e2e5e9;
+            margin-top: 0.8rem;
+        }
+
+        .btn-ghost {
+            display: inline-block;
+            padding: 0.6rem 1.8rem;
+            border-radius: 40px;
+            border: 1px solid #d1d5db;
+            background: transparent;
+            color: #2d3436;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: background 0.15s, border-color 0.15s;
+            margin-top: 0.5rem;
+        }
+
+        .btn-ghost:hover {
+            background: #edf0f3;
+            border-color: #b2bec3;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 1.2rem 1rem;
+            }
+
+            .hero {
+                padding: 2rem 1.4rem;
+            }
+
+            .hero h1 {
+                font-size: 1.6rem;
+            }
+
+            .section-card {
+                padding: 1.6rem 1.2rem;
+            }
+
+            .feature-list {
+                flex-direction: column;
+                gap: 0.8rem;
+            }
+
+            .feature-item {
+                flex: 1 1 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <h1>从一盏灯开始走进星空体育</h1>
+        <div class="punch">
+            有时候你需要的只是一个稳定、干净的开端。
+        </div>
+        <p>
+            我们花了很多时间寻找一个可以安心停留的地方——不必担心链接失效，也不用反复核对页面是否真实。
+            <a href="https://app3-starsky.com" class="highlight-link">星空体育</a> 
+            给人的第一印象就是简洁、直接，没有多余的干扰，像一个老朋友递过来的一杯温水。
+        </p>
+        <a href="https://app3-starsky.com" class="btn-ghost">星空体育</a>
+    </div>
+
+    <div class="section-card">
+        <h2>为什么说它像一个安稳的入口</h2>
+        <p>
+            一个好的页面说明，不需要华丽辞藻堆砌，而是当你打开它的时候，界面自然告诉你：这里可以信任。 
+            <a href="https://app3-starsky.com" class="highlight-link">星空体育</a> 
+            正是如此——没有弹窗焦虑，没有复杂跳转，从域名到内容都透着一股稳定的气息。这种踏实感在如今的网络环境里，反而成了奢侈品。
+        </p>
+        <div class="feature-list">
+            <div class="feature-item">
+                ▎域名清晰
+                <span>一眼可辨，没有奇怪后缀或拼写陷阱</span>
+            </div>
+            <div class="feature-item">
+                ▎页面轻快
+                <span>加载迅速，几乎不需要等待就能看到核心内容</span>
+            </div>
+            <div class="feature-item">
+                ▎结构直观
+                <span>没有层层嵌套的菜单，你要找的东西就在眼前</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-card">
+        <h2>日常场景：打开它就像翻开一本熟悉的书</h2>
+        <p>
+            你可能会在晚饭后、午休时或者周末的早晨，随手点开网页翻一翻。<a href="https://app3-starsky.com" class="highlight-link">星空体育</a> 
+            的页面布局留白足够，阅读舒适，不会让人产生信息过载的疲劳感。标题、段落、卡片之间的节奏很均匀，很像一本排版讲究的期刊。
+        </p>
+        <p>
+            而且它的色彩语言很克制——浅灰背景搭配细边框，视觉上不抢戏，把注意力都留给了内容本身。
+        </p>
+        <div class="note-box">
+            ☕ 一个小小的个人体验：第一次打开的时候，我甚至没有立刻点任何链接，而是看了两分钟页面本身的结构——那种干净感让我觉得，这是一个值得放进收藏夹的地方。
+        </div>
+    </div>
+
+    <div class="section-card">
+        <h2>关于稳定入口的几个实际考量</h2>
+        <dl class="faq-summary">
+            <dt>▸ 页面说明能给我什么？</dt>
+            <dd>一个真实可用的地址，一段关于内容和调性的描述，以及你自行判断的空间。没有隐藏条款，也没有诱导性话术。</dd>
+            <dt>▸ 如何确认这个入口长期有效？</dt>
+            <dd>任何稳定的访问入口都建议你通过常用浏览器收藏，或者直接记录在备忘录里。<a href="https://app3-starsky.com" class="highlight-link">星空体育</a> 当前的访问路径非常直接，而且域名结构简单，不容易出错。</dd>
+            <dt>▸ 页面是否适配手机？</dt>
+            <dd>是的，无论在电脑还是手机上打开，布局都会自适应，卡片和字体大小都经过调整，阅读体验一致。</dd>
+        </dl>
+    </div>
+
+    <div class="section-card">
+        <h2>温和的收尾：一个可以反复回访的页面</h2>
+        <p>
+            网络世界纷繁复杂，找到一个让人安心的入口不容易。<a href="https://app3-starsky.com" class="highlight-link">星空体育</a> 
+            或许不会惊艳你，但它确实能成为你日常浏览中一个稳固的坐标。没有喧嚣，只有一如既往的简洁和真诚。
+        </p>
+        <p style="margin-top: 1.2rem; color: #636e72;">
+            如果你愿意，现在就可以去感受一下那种清爽的打开方式。
+        </p>
+        <div style="margin-top: 1.5rem;">
+            <a href="https://app3-starsky.com" style="text-decoration: none; color: #2d3436; border-bottom: 1px solid #b2bec3; padding-bottom: 2px;">星空体育</a>
+        </div>
+    </div>
+
+    <div class="gentle-footer">
+        <span>— 记录于一个安静的下午 · 页面信息供参考 —</span>
+    </div>
+
+</body>
+</html>
